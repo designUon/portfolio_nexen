@@ -1,0 +1,942 @@
+@media all and (max-width:1224px) and (min-width:850px) {
+
+
+    #fullpage {
+        overflow: hidden;
+    }
+
+    #mobile_splash{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2000;
+        pointer-events: none;
+        display: none;
+        /* background-color: aqua; */
+    }
+
+    /* ////////////////////// 더보기 메뉴 ////////////////////*/
+
+    #hidemenu_wrap {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 1);
+        z-index: 1000;
+        position: absolute;
+        /* display: block; */
+        display: none;
+    }
+
+    #hidemenu_line {
+        width: calc(100vw - 100px);
+        height: calc(100vh - 100px);
+        margin-top: 50px;
+        margin-left: 50px;
+        border: 2px solid #7F1085;
+        position: absolute;
+    }
+
+    #hidemenu_textwrap {
+        width: 80%;
+        height: 80vh;
+        margin: 100px auto;
+        /* background-color: aquamarine; */
+        position: absolute;
+    }
+
+    #hidemenu_left {
+        width: 50%;
+        height: 70vh;
+        margin-top: 5%;
+        border-right: 2px solid #7F1085;
+        /* position: absolute; */
+        z-index: 1002;
+    }
+
+    #hidemenu_left img {
+        margin-left: 20%;
+        width: 20%;
+        position: absolute;
+        float: left;
+        z-index: 1001;
+    }
+
+    #hidemenu_menu_wrap {
+        width: 500px;
+        height: 650px;
+        top: 8%;
+        left: 65%;
+        position: absolute;
+    }
+
+    .hide_mainmenu {
+        width: 300px;
+        height: 160px;
+        /* background-color: aqua; */
+    }
+
+    .hide_mainmenu a {
+        font-size: 20px;
+        font-weight: 800;
+        color: #7F1085;
+    }
+
+    .hide_submenu {
+        width: 200px;
+        height: 70px;
+        margin-left: 220px;
+        margin-top: -28px;
+        /* background-color: cornflowerblue; */
+    }
+
+    .hide_submenu a {
+        font-size: 15px;
+        font-weight: 100;
+        color: #333;
+    }
+
+    #close_btn {
+        width: 30px;
+        height: 30px;
+        bottom: calc(100vh - 120px);
+        left: calc(100vw - 120px);
+        position: absolute;
+    }
+
+    #close_btn>a>img {
+        width: 100%;
+    }
+
+
+
+
+    /* ////////////////////// 헤더 ////////////////////*/
+
+
+    header {
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        background-color: white;
+        /* background-color: darkolivegreen; */
+        z-index: 999;
+    }
+
+    #hidemenu {
+        top: 45px;
+        right: 80px;
+        position: absolute;
+    }
+
+    #header_wrap {
+        width: 70%;
+        height: 100%;
+        /* background-color: aquamarine; */
+        margin: 0 auto;
+        position: relative;
+    }
+
+
+
+    /* 부모에게 값 주기 */
+    #header_logo {
+        width: 200px;
+        height: 50px;
+        margin: 38px auto;
+        margin-left: -70px;
+        /* background-color: blue; */
+        float: left;
+    }
+
+    #header_logo img {
+        width: 100%;
+    }
+
+    #main_menu_wrap {
+        width: 600px;
+        height: 30px;
+        margin: 0 auto;
+        padding-top: 25px;
+        position: relative;
+        /* background-color: blueviolet; */
+        z-index: 0;
+        display: none;
+    }
+
+    .main_menu {
+        width: 150px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 12px;
+        font-weight: 600;
+        float: left;
+        margin-top: 25px;
+        box-sizing: border-box;
+        /* background-color: chartreuse; */
+    }
+
+    .main_menu a {
+        color: #7F1085;
+    }
+
+    .main_menu>ul {
+        margin-top: 12px;
+    }
+
+    .sub_menu {
+        width: 100%;
+        height: 30px;
+        font-size: 13px;
+        font-weight: 300;
+        display: none;
+        /* background-color: aliceblue; */
+    }
+
+
+    #main_menu_wrap::after {
+        width: 100%;
+        height: 0px;
+        background-color: rgba(255, 255, 255, 0.7);
+        /* background-color: antiquewhite; */
+        position: fixed;
+        top: 90px;
+        left: 0;
+        content: '';
+        transition-duration: 1s;
+        z-index: -1;
+    }
+
+    #main_menu_wrap:hover::after {
+        height: 100px;
+    }
+
+
+    #main_menu_wrap:hover .sub_menu {
+        display: block;
+    }
+
+
+
+    .sub_menu a {
+        color: #333;
+    }
+
+    /* 서브메뉴 호버 컬러 */
+    .submenu_color {
+        color: #7F1085;
+    }
+
+    #login_bigbox {
+        width: 210px;
+        height: 200px;
+        right: 0;
+        top: 10px;
+        position: absolute;
+        /* background-color: blue; */
+    }
+
+    #login_menu_wrap {
+        width: 240px;
+        height: 30px;
+        right: 250px;
+        top: 35px;
+        position: absolute;
+        /* background-color: blueviolet; */
+    }
+
+    .login_menu {
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+        float: left;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    #searchbox {
+        width: 100%;
+        height: 35px;
+        padding-top: 35px;
+        /* background-color: aquamarine; */
+        position: relative;
+    }
+
+    #searchbox input {
+        width: 200px;
+        height: 30px;
+        border: 2px solid #7F1085;
+        border-radius: 5px;
+        background-color: transparent;
+    }
+
+    #searchbox img {
+        width: 34px;
+        height: 30px;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+    }
+
+    #searchbox ::placeholder {
+        padding-left: 10px;
+        font-size: 12px;
+        color: #7F1085;
+    }
+
+
+    /* ////////////////////// 섹션1 - 슬라이드A ////////////////////*/
+
+    #slide_A {
+        width: 100%;
+        justify-content: space-between;
+        background-color: white;
+        position: relative;
+    }
+
+    #sec01A_textwrap {
+        width: 300px;
+        height: 400px;
+        top: 25vh;
+        left: 18vw;
+        position: absolute;
+        /* background-color: antiquewhite; */
+    }
+
+    #sec01A_left {
+        width: 100%;
+        height: 280px;
+        /* background-color: aqua; */
+    }
+
+    #sec01A_left img {
+        width: 100%;
+    }
+
+    #sec01A_text {
+        width: 100%;
+        height: 100px;
+        margin-left: 15px;
+        /* background-color: aquamarine; */
+    }
+
+    #sec01A_text h1 {
+        width: 300px;
+        height: 28px;
+        padding-top: 10px;
+        margin-bottom: 15px;
+        text-align: left;
+        font-size: 27px;
+        color: #7F1085;
+        /* background-color: coral; */
+    }
+
+    #sec01A_subtext {
+        width: 300px;
+        height: 50px;
+        text-align: left;
+        font-size: 15px;
+        color: #333;
+        /* background-color: cyan; */
+    }
+
+    #sec01A_img {
+        width: 60%;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        margin-top: -70vh;
+        /* background-color: #7F1085; */
+    }
+
+    #sec01A_img img {
+        width: 100%;
+        /* position: absolute; */
+    }
+
+    /* ////////////////////// 섹션1 - 슬라이드B ////////////////////*/
+
+
+    #slide_B {
+        width: 100%;
+        position: relative;
+        /* background-color: aqua; */
+    }
+
+
+    #bannerB_pc,
+    #bannerB_tab,
+    #bannerB_mobile {
+        display: none;
+    }
+
+    #bannerB_tab2 {
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+        display: block;
+    }
+
+
+    /* ////////////////////// 섹션1 - 슬라이드 C ////////////////////*/
+
+
+    #slide_C {
+        /* width: 100%; */
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        background-color: #EDEDED;
+    }
+
+    #bannerC_pc,
+    #bannerC_tab,
+    #bannerC_mobile {
+        display: none;
+    }
+
+    #bannerC_tab2 {
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        display: block;
+    }
+
+
+    #sec01C_textwrap {
+        width: 300px;
+        height: 400px;
+        top: 35vh;
+        left: 12vw;
+        position: absolute;
+        z-index: 30;
+        /* background-color: coral; */
+    }
+
+    #sec01C-tire {
+        width: 230px;
+        height: 330px;
+        top: 190px;
+        left: 30px;
+        position: absolute;
+    }
+
+    #sec01C-tire img {
+        width: 100%;
+    }
+
+
+    #sec01C_text {
+        top: 0;
+        right: 0;
+        text-align: left;
+        line-height: 40px;
+        position: absolute;
+        color: #7F1085;
+    }
+
+    #nextlevel_logo {
+        margin-bottom: 10px;
+    }
+
+    #nextlevel_logo img {
+        width: 180px;
+        height: 60px;
+        top: -50px;
+        left: -5px;
+        position: absolute;
+    }
+
+    #sec01C_text>span {
+        font-size: 17px;
+        width: 300px;
+        height: 100px;
+        margin-top: 35px;
+        color: #333;
+        /* background-color: aquamarine; */
+    }
+
+
+
+
+
+
+
+    /* ////////////////////// 섹션2 - 풀영상 ////////////////////*/
+
+
+    #sec02 {
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        overflow: hidden;
+        position: relative;
+    }
+
+
+    #sec02 video {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+    }
+
+
+
+    /* ////////////////////// 섹션3 - 타이어메뉴 ////////////////////*/
+
+
+    /* 로고 위치 고정방법 */
+    #sec03_logo {
+        width: 200px;
+        height: 80px;
+        margin-top: 10%;
+        margin-left: 10%;
+        box-sizing: border-box;
+        /* background-color: blue; */
+        display: none;
+    }
+
+    #sec03_logo img {
+        width: 100%;
+    }
+
+    /*  섹션3 - 타이어메뉴 클릭 시 나오는 컨텐츠 */
+
+    #sec03 {
+        overflow: hidden;
+    }
+
+    #sec03_menu_contents {
+        width: 100%;
+        position: relative;
+        height: 100vh;
+        /* background-color: darkgreen; */
+    }
+
+    .sec03_box {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        /* 자연스럽게 나타나기가 안됨 */
+        transition-duration: 1s;
+    }
+
+    .sec03_box:nth-child(2) {
+        display: block;
+    }
+
+
+    .sec03_img {
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        background-color: white;
+    }
+
+    .sec03_img img {
+        width: 80%;
+        bottom: 0;
+        position: absolute;
+    }
+
+    .sec03_text {
+        width: 400px;
+        height: 200px;
+        top: 20vh;
+        right: 35%;
+        position: absolute;
+        /* background-color: antiquewhite; */
+    }
+
+    .sec03_maintext {
+        font-size: 45px;
+        font-weight: 900;
+        right: 0;
+        color: #7F1085;
+        position: absolute;
+        /* background-color: cadetblue; */
+    }
+
+    .underline {
+        width: 20px;
+        height: 30px;
+        top: 50px;
+        right: 2px;
+        position: absolute;
+        border-bottom: 1px solid #7F1085;
+    }
+
+
+    .sec03_subtext {
+        font-size: 20px;
+        top: 110px;
+        right: 0;
+        color: #333;
+        position: absolute;
+        text-align: right;
+        /* background-color: darksalmon; */
+    }
+
+    #sec03_tire {
+        width: 450px;
+        height: 500px;
+        position: absolute;
+        right: 0;
+        top: 60%;
+        transform: translateY(-50%);
+    }
+
+    #sec03_Rtire {
+        width: 500px;
+        height: 500px;
+        right: -250px;
+        position: absolute;
+        /* background-color: chartreuse; */
+    }
+
+    #tire_text_wrap {
+        width: 300px;
+        height: 500px;
+        /* background-color: darksalmon; */
+        position: absolute;
+    }
+
+    .tire_text {
+        width: 300px;
+        height: 100px;
+        font-size: 16px;
+        color: #c8c8c8;
+        text-align: right;
+        line-height: 105px;
+        /* 위치잡기 포지션값 활용 */
+        position: relative;
+        /* background-color: dodgerblue; */
+    }
+
+    #tire_text_wrap>li:nth-child(1),
+    #tire_text_wrap>li:nth-child(5) {
+        right: -10px;
+    }
+
+    #tire_text_wrap>li:nth-child(2),
+    #tire_text_wrap>li:nth-child(4) {
+        right: -40px;
+        /* background-color: aquamarine; */
+        text-align: center;
+    }
+
+    #tire_text_wrap>li:nth-child(3) {
+        right: -85px;
+        text-align: left;
+        /* background-color: darksalmon; */
+    }
+
+    .tire_text>a>span {
+        position: relative;
+        color: #c8c8c8;
+        /* float: left; */
+    }
+
+    /*after / before 가상의 존재 */
+    .tire_text>span::after {
+        width: 16px;
+        height: 16px;
+        background-color: #7F1085;
+        border-radius: 8px;
+        /* 비워두더라도 반드시 표기 */
+        content: '';
+        position: absolute;
+        top: 45px;
+        right: -30px;
+        display: none;
+    }
+
+
+
+
+    /* ////////////////////// 섹션4 - 광고 ////////////////////*/
+
+    #sec04 {
+        width: 100%;
+        height: 3000px;
+        /* background-color: aquamarine; */
+        background-image: url(../img/sec04_bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    #sec04_wrap {
+        width: 750px;
+        /* width: 1300px; */
+        height: 1330px;
+        margin: 0 auto;
+        /* background-color: bisque; */
+    }
+
+    #sec04_left {
+        width: 100%;
+        /* width: 700px; */
+        height: 500px;
+        /* float: left;
+        margin-right: 2%; */
+        margin: 0 auto;
+        margin-top: 100px;
+        /* background-color: dodgerblue; */
+    }
+
+    .sec04_title {
+        width: 150px;
+        height: 30px;
+        font-size: 20px;
+        color: #c8c8c8;
+        float: left;
+        /* background-color: crimson; */
+    }
+
+    .more_btn {
+        width: 60px;
+        height: 15px;
+        background-color: #7F1085;
+        border: 1px solid #c8c8c8;
+        border-radius: 10px;
+        text-align: center;
+        line-height: 12px;
+        margin-top: 5px;
+        float: right;
+    }
+
+    .more_btn a {
+        font-size: 12px;
+        color: white;
+    }
+
+    #sec04_left_imgwrap {
+        width: 100%;
+        height: 310px;
+        margin-top: 30px;
+        box-sizing: border-box;
+    }
+
+    .sec04_left_img {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        position: relative;
+        /* background-color: cornflowerblue; */
+    }
+
+    .sec4_img_body {
+        display: none;
+    }
+
+    .sec04_img_box {
+        /* width: 100%; */
+        /* height: 150px; */
+        height: 100%;
+        background-size: cover;
+        background-position: left;
+
+    }
+
+    #sec04_A {
+        background-image: url(../img/mancity_keyimg.png);
+        background-size: cover;
+    }
+
+    #sec04_B {
+        background-image: url(../img/img_sports_formula1.jpeg);
+        background-size: cover;
+    }
+
+    #sec04_C {
+        background-image: url(../img/img_sports_racing1.jpeg);
+        background-size: cover;
+    }
+
+
+
+
+    .sec04_left_imgtext {
+        width: 100%;
+        height: 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        line-height: 30px;
+        font-size: 15px;
+        /* bottom:0; */
+        /* 마우스오버시 올라오도록 */
+        bottom: -30px;
+        position: absolute;
+        z-index: 1111;
+        transition-duration: 1s;
+    }
+
+    #sec04_right {
+        width: 750px;
+        /* width: 470px; */
+        height: 500px;
+        margin: 0 auto;
+        margin-top: 80px;
+        /* float: right; */
+        /* background-color: aquamarine; */
+    }
+
+    #sec04_right_imgwrap {
+        width: 750px;
+        height: 370px;
+        /* margin-top: 100px; */
+        /* padding-top: 30px; */
+        overflow: hidden;
+        /* float: right; */
+        /* margin-right: -20px; */
+        /* box-sizing: border-box; */
+        /* background-color: darkgreen; */
+    }
+
+    .sec04_right_imgA,
+    .sec04_right_imgB {
+        width: 180px;
+        height: 180px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        background-color: black;
+    }
+
+    .sec04_right_imgA img {
+        width: 100%;
+    }
+
+    .sec04_right_imgB img {
+        height: 100%;
+    }
+
+    .marginRight {
+        margin-right: 0;
+    }
+
+
+    /* ////////////////////// 푸터 ////////////////////*/
+
+    #footer {
+        width: 100%;
+        height: 170px;
+        font-size: 5px;
+        color: #c8c8c8;
+        bottom: 0;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        background-color: #333;
+        position: absolute;
+    }
+
+    #footer_logo {
+        width: 180px;
+        height: 40px;
+        left: 70px;
+        position: absolute;
+        /* float: left; */
+        /* margin-left: 12%; */
+        /* background-color: antiquewhite; */
+    }
+
+    #footer_left {
+        width: 500px;
+        height: 150px;
+        top: 80px;
+        left: 70px;
+        position: absolute;
+        /* margin-top: 50px;
+        margin-left: -120px; */
+        /* float: left; */
+        /* background-color: antiquewhite; */
+    }
+
+    #footer_left>ul>li {
+        /* font-size: 5px; */
+        float: left;
+    }
+
+    #footer_left>span {
+        left: 0;
+    }
+
+    #footer_right {
+        right: -100px;
+        position: absolute;
+    }
+
+    #familysite {
+        width: 300px;
+        height: 18px;
+        margin-right: 200px;
+        /* background-color: aqua; */
+    }
+
+    #familysite>li {
+        width: 100px;
+        height: 15px;
+        text-align: center;
+        line-height: 15px;
+        float: right;
+        margin-left: 10px;
+        border: 1px solid #c8c8c8;
+        border-radius: 15px;
+        /* background-color: #7F1085; */
+    }
+
+    #familysite>li>a {
+        width: 60px;
+        height: 15px;
+        color: #c8c8c8;
+        font-size: 12px;
+    }
+
+    #SNS {
+        width: 300px;
+        height: 30px;
+        padding-top: 20px;
+        /* background-color: bisque; */
+    }
+
+    #SNS>li {
+        width: 30px;
+        height: 30px;
+        float: right;
+        margin-left: 10px;
+        /* background-color: aquamarine; */
+    }
+
+    #SNS>li img {
+        width: 100%;
+    }
+
+
+
+    .on {
+        color: #7F1085;
+        font-weight: 900;
+    }
+
+    .section {
+        position: relative;
+    }
+
+}
+
+/* end */

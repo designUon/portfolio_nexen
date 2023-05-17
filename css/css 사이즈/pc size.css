@@ -1,0 +1,355 @@
+@media all and (min-width:1480px){
+
+
+#wrap{
+    width : 100%;
+    overflow: hidden;
+}
+
+/* 헤더시작 */
+header{
+    width : 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+header>button{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+header>#logo{
+    position: relative;
+    z-index: 20;
+}
+/* 섹션시작 */
+section{
+    width : 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../img/bg_main.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    transition: all 1s;
+}
+
+/* 가운데 컨텐츠 */
+#align_box{
+    width : 1280px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+#main_text{
+    padding-top: 150px;
+}
+
+#up_text>p{
+    font-size: 65px;
+}
+#down_text{
+    padding-top: 50px;
+    margin-left: 30px;
+}
+#down_text>img{
+    margin-bottom: -30px;
+}
+#down_text>span{
+    border-bottom: 1px solid #333;
+}
+
+/* 박스 3개 */
+.main_box{
+    width : 380px;
+    height: 336px;
+    position: absolute;
+    padding: 50px;
+    box-sizing: border-box;
+}
+#left{
+    left: 0;
+    bottom: 0;
+    background-color: #2ab6ad;
+}
+#center{
+    right: 380px;
+    bottom: 50px;
+    background-color: white;
+}
+#right{
+    right: 0;
+    bottom: 0;
+    background-color: #eaeaea;
+}
+.main_box>a{
+    width : 100%;
+    text-align: right;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 150px;
+}
+.main_box>span{
+    font-size: 25px;
+    font-weight: 900;
+    margin-right: 15px;
+}
+.main_box>p{
+    font-size: 15px;
+}
+#left>a, #left>span, #left>p{
+    color: white;
+}
+
+/* 푸터영역 */
+footer{
+    width : 100%;
+    overflow: hidden;
+    background-color: #3e4146;
+    padding: 30px 0;
+}
+#inner_footer{
+    width : 1600px;
+    margin: 0 auto;
+    color: white;
+}
+
+/* 상위footer */
+
+#top_footer{
+    display: flex;
+    justify-content: space-between;
+}
+/* #footer_menu{
+    background-color: #eaeaea;
+} */
+#footer_menu>li{
+    float: left;
+    font-size: 13px;
+    margin-right: 20px;
+    position: relative;
+}
+#footer_menu>li>a{
+    color: white;
+}
+#footer_menu>li:nth-child(1)::after{
+    content: '|';
+    position: absolute;
+    right: -13px;
+    color: #999;
+}
+#footer_menu>li:nth-child(2)>a{
+    color: #999;
+}
+
+#family_site{
+    font-size: 13px;
+}
+#family_menu{
+    width : 160px;
+    height: 257px;
+    background-color: #999999;
+    padding: 20px;
+    box-sizing: border-box;
+    /* 안보이게 처리 */
+    display: none;
+}
+#family_menu>li{
+    border-bottom: 1px solid white;
+    padding-bottom: 14px;
+    margin-top: 5px;
+}
+#family_menu>li:last-child{
+    border: none;
+}
+#family_menu>li>a{
+    color: white;
+}
+#bot_footer{
+    margin-top: 20px;
+    font-size: 13px;
+    color: #666;
+}
+
+#footer_copyright{
+    float: right;
+    margin-top: -25px;
+}
+
+
+/* 메뉴 */
+#menu_wrap{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.5);
+    /* alpha => opacity */
+    display: none;
+}
+#right_menu{
+    width: 700px;
+    height: 100vh;
+    background-color: #3e4146;
+    float: right;
+}
+#right_menu>button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    width : 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    float: right;
+    position: relative;
+}
+ #right_menu>button>img{
+    float: right;
+} 
+
+#menu_menubox{
+    width : 100%;
+    overflow: hidden;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#menu_menubox>li>a{
+    color: #eaeaea;
+    position: relative;
+}
+#menu_menubox>li{
+    padding: 20px 0;
+    font-size: 40px;
+    box-sizing: border-box;
+}
+#menu_submenu{
+    margin-top: 20px;
+    font-size: 20px;
+}
+#menu_submenu>li{
+    padding-top: 10px;
+}
+#menu_menubox a{
+    color: #eaeaea;
+}
+#menu_menubox>li>a::after{
+    width : 0;
+    height: 5px;
+    background-color: #2ab6ad;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+#menu_menubox>li>a:hover::after{
+    width : 100%;
+    transition: all 1s;
+}
+#menu_menubox>li>a:hover{
+    color: #2ab6ad;
+}
+
+#menu_footer{
+    padding: 50px;
+    box-sizing: border-box;
+    color: #eaeaea;
+}
+#menu_footer_menu{
+    width : 100%;
+    float: left;
+    padding-bottom: 50px;
+}
+#menu_footer_menu>li{
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+#menu_footer_menu a{
+    color: #eaeaea;
+}
+#menu_footer_menu>li:nth-child(1):after{
+    content: '|';
+    position: absolute;
+    right: -13px;
+}
+#menu_footer_menu>li:nth-child(1){
+    font-weight: 900;
+}
+#menu_footer_menu>li:nth-child(2)>a{
+  color: #999999;
+}
+
+
+#popup_wrap{
+    width : 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12345;
+    display: none;
+}
+#popup_con{
+    width : 710px;
+    height: 350px;
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #999;
+}
+#popup_main_text{
+    height: 300px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+#popup_main_text>p:nth-child(1){
+    color: #2ab6ad;
+    width : 300px;
+    font-weight: 700;
+    font-size: 28px;
+    border-bottom: 2px solid #2ab6ad;
+}
+#popup_main_text>p:nth-child(2), #popup_main_text>p:nth-child(3){
+    padding-top: 30px;
+}
+#popup_line{
+    width : 100%;
+    height: 50px;
+    background-color: #3e4146;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+#popup_left>span{
+    padding-left: 10px;
+}
+
+#popup_line>button{
+    width : 18px;
+    height: 18px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+#popup_line>button>img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-top: 5px;
+}
+
+
+
+/* media query */
+} 

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXEN TIRE</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.fullpage.js"></script>
+    <!-- <script src="js/fullpage_drag.js"></script> -->
+    <script src="js/index 0608.js"></script>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/pc 0608.css">
+    <link rel="stylesheet" href="css/tab_A 0608.css">
+    <link rel="stylesheet" href="css/tab_B 0608.css">
+    <link rel="stylesheet" href="css/moblie_A 0608.css">
+    <link rel="stylesheet" href="css/moblie_B 0608.css">
+
+    <!-- <script>
+        $('#fullpage').fullpage({
+            //options here
+            autoScrolling: true,
+            scrollHorizontally: true,
+            navigation: true,
+            dragAndMove: true,
+            slidesNavigation: true,
+            slidesNavPosition: 'bottom',
+        });
+    </script> -->
+
+</head>
+
+<body>
+
+    <div id="mobile_splash">
+        <video src="img/nexen_mobile splash.mp4" autoplay muted></video>
+        <!-- data-keepplaying data-autoplay muted loop -->
+    </div>
+
+    <!--/////////////////////// 더보기 메뉴 ///////////////////////-->
+
+    <div id="hidemenu_wrap">
+
+        <div id="hidemenu_line"></div>
+
+        <div id="hidemenu_textwrap">
+
+            <div id="hidemenu_left"><img src="img/NEXEN TIRE+Slogan_Landscape_Emphasis on the Slogan.png" alt="이미지">
+            </div>
+
+            <div id="hidemenu_right">
+
+                <div id="hidemenu_menu_wrap">
+                    <ul class="hide_mainmenu"><a href="#">넥센타이어</a>
+                        <li class="hide_submenu"><a href="#">브랜드소개</a></li>
+                        <li class="hide_submenu"><a href="#">기업안내</a></li>
+                        <li class="hide_submenu"><a href="#">채용정보</a></li>
+                    </ul>
+
+                    <ul class="hide_mainmenu hide_topmargin"><a href="#">제품안내</a>
+                        <li class="hide_submenu"><a href="#">차종별</a></li>
+                        <li class="hide_submenu"><a href="#">기능별</a></li>
+                        <li class="hide_submenu"><a href="#">기타</a></li>
+                    </ul>
+
+                    <ul class="hide_mainmenu hide_topmargin"><a href="#">뉴스&이벤트</a>
+                        <li class="hide_submenu"><a href="#">뉴스</a></li>
+                        <li class="hide_submenu"><a href="#">이벤트</a></li>
+                    </ul>
+
+                    <ul class="hide_mainmenu"><a href="#">서비스</a>
+                        <li class="hide_submenu"><a href="#">판매점찾기</a></li>
+                        <li class="hide_submenu"><a href="#">본사안내</a></li>
+                        <li class="hide_submenu"><a href="#">고객문의</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div id="close_btn"><a href="#"><img src="img/close_btn.png" alt="이미지"></div></a>
+    </div>
+
+
+    <!--/////////////////////// 헤더 ///////////////////////-->
+
+    <header>
+
+        <!-- 더보기버튼 -->
+
+        <div id="hidemenu"><a href="#">
+                <!-- 파일명은 영문명으로 꼭!! -->
+                <!-- <img src="img/더보기버튼.png" alt="이미지"> -->
+                <img src="img/hidemenu_btn.png" alt="이미지">
+            </a></div>
+
+
+        <!-- 헤더시작 -->
+
+        <div id="header_wrap">
+
+            <div id="header_logo">
+                <a href="nexen_renewal-0608.html"><img src="img/넥센타이어_가로형_기본형.png" alt="이미지"></a>
+            </div>
+
+            <!-- 제일큰부모 이름 짓기 -->
+            <ul id="main_menu_wrap">
+                <li class="main_menu"><a href="#">넥센타이어</a>
+                    <ul>
+                        <li class="sub_menu"><a href="#">브랜드소개</a></li>
+                        <li class="sub_menu"><a href="#">기업안내</a></li>
+                        <li class="sub_menu"><a href="#">채용정보</a></li>
+                    </ul>
+                </li>
+
+                <li class="main_menu"><a href="#">제품안내</a>
+                    <ul>
+                        <li class="sub_menu"><a href="#">차종별</a></li>
+                        <li class="sub_menu"><a href="#">기능별</a></li>
+                        <li class="sub_menu"><a href="#">기타</a></li>
+                    </ul>
+                </li>
+
+                <li class="main_menu"><a href="#">뉴스&이벤트</a>
+                    <ul>
+                        <li class="sub_menu"><a href="#">뉴스</a></li>
+                        <li class="sub_menu"><a href="#">이벤트</a></li>
+                    </ul>
+                </li>
+
+                <li class="main_menu"><a href="#">서비스</a>
+                    <ul>
+                        <li class="sub_menu"><a href="#">판매점찾기</a></li>
+                        <li class="sub_menu"><a href="#">본사안내</a></li>
+                        <li class="sub_menu"><a href="#">고객문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- 로그인 / search부분 부모박스 만들기 -->
+            <!-- 제일큰부모 이름 짓기 -->
+            <div id="login_bigbox">
+                <ul id="login_menu_wrap">
+                    <li class="login_menu"><a href="#">로그인</a></li>
+                    <li class="login_menu"><a href="#">회원가입</a></li>
+                    <li class="login_menu"><a href="#">고객센터</a></li>
+                </ul>
+
+                <!-- 부모박스만들기 -->
+                <div id="searchbox">
+                    <input type="search" placeholder="타이어검색 CLICK!">
+                    <img src="img/타이어 아이콘2.png" alt="이미지">
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div id="fullpage">
+
+        <!--/////////////////////// 섹션1 ///////////////////////-->
+
+        <div class="section" id="sec01">
+
+            <!--/////////////////////// 섹션1 - 슬라이드A ///////////////////////-->
+            <div class="sec01_wrap">
+                <div class="slide" id="slide_A">
+                    <div class="intro">
+                        <div id="sec01A_textwrap">
+                            <div id="sec01A_left"><img src="img/sec01A_title.png" alt="이미지"></div>
+                            <div id="sec01A_text">
+                                <h1>2022.05.02 ~ 05.31</h1>
+                                <div id="sec01A_subtext">
+                                    <b>80주년 기념 역대급 선물 이벤트</b>와<br>
+                                    <b>47% 할인 & 추가혜택</b> 증정까지!
+                                </div>
+                            </div>
+                        </div>
+                        <div id="sec01A_img"><img src="img/slideA_bg.png" alt="이미지"></div>
+                    </div>
+                </div>
+
+
+                <!--/////////////////////// 섹션1 - 슬라이드B ///////////////////////-->
+
+                <div class="slide" id="slide_B">
+                    <div class="intro">
+                        <img src="img/bannerB_pc.png" alt="이미지" id="bannerB_pc">
+                        <img src="img/bannerB_tab.png" alt="이미지" id="bannerB_tab">
+                        <img src="img/bannerB_tab2.png" alt="이미지" id="bannerB_tab2">
+                        <img src="img/bannerB_mobile.png" alt="이미지" id="bannerB_mobile">
+                    </div>
+                </div>
+
+
+                <!--/////////////////////// 섹션1 - 슬라이드C ///////////////////////-->
+
+                <div class="slide" id="slide_C">
+                    <div class="intro">
+                        <div id="sec01C_textwrap">
+
+                            <div id="sec01C-tire">
+                                <img src="img/nfera-supreme.png" alt="이미지">
+                            </div>
+
+                            <div id="sec01C_text">
+                                <div id="nextlevel_logo"><img src="img/NEXT LEVEL logo 2.png" alt="이미지"></div>
+                                <h1><b>비대면</b><br></h1>
+                                <h1>타이어<br>방문교체서비스</h1>
+                                <span>언제 어디서나 클릭 한 번으로 끝!</span>
+                            </div>
+                        </div>
+                        <img src="img/bannerC_pc.png" alt="이미지" id="bannerC_pc">
+                        <img src="img/bannerC_tab.png" alt="이미지" id="bannerC_tab">
+                        <img src="img/bannerC_tab2.png" b alt="이미지" id="bannerC_tab2">
+                        <img src="img/bannerC_mobile.png" alt="이미지" id="bannerC_mobile">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <!--/////////////////////// 섹션2 - 영상 풀페이지 ///////////////////////-->
+
+        <div class="section" id="sec02">
+            <video src="img/NEXEN video.mp4" data-keepplaying data-autoplay muted loop></video>
+            <div id="sec02_line"></div>
+        </div>
+
+
+
+        <!--/////////////////////// 섹션3 - 타이어메뉴 ///////////////////////-->
+
+        <div class="section" id="sec03">
+
+            <!-- 섹션 로고 고정 -->
+            <!-- <div id="sec03_logo"><img src="img/NEXEN TIRE+Slogan_Landscape_Emphasis on the Slogan.png" alt="이미지"></div> -->
+
+
+            <!-- 섹션3 왼쪽 - 이미지,텍스트 교체됨-->
+            <div id="sec03_menu_contents">
+
+                <div id="sec03_A_history" class="sec03_box">
+                    <!-- img태그 / css bg -->
+                    <div class="sec03_img"><img src="img/섹션03_history_bg2.png" alt="이미지"></div>
+                    <div class="sec03_text" data-aos="fade-down" data-aos-duration="2000">
+                        <span class="sec03_maintext">HISTORY</span>
+                        <div class="underline"></div>
+                        <span class="sec03_subtext">업계가 주목하는 기술력과 제품 제시<br><b>세계 타이어 업계 최고 수준의 매출 성장</b></span>
+                    </div>
+                </div>
+
+                <div id="sec03_B_design" class="sec03_box">
+                    <div class="sec03_img"><img src="img/섹션03_Design_bg2.png" alt="이미지"></div>
+                    <div class="sec03_text" data-aos="fade-down" data-aos-duration="2000">
+                        <span class="sec03_maintext">DESIGN</span>
+                        <div class="underline"></div>
+                        <span class="sec03_subtext">업계 최초!<br><b>세계 4대 디자인어워드 그랜드 슬램</b></span>
+                    </div>
+                </div>
+
+                <div id="sec03_C_technology" class="sec03_box">
+                    <div class="sec03_img"><img src="img/섹션03_Technology_bg2.png" alt="이미지"></div>
+                    <div class="sec03_text" data-aos="fade-down" data-aos-duration="2000">
+                        <span class="sec03_maintext">TECHNOLOGY</span>
+                        <div class="underline"></div>
+                        <span class="sec03_subtext">최고의 연구인력<br><b>체계적이고 고도화된 연구 개발 프로세스</b></span>
+                    </div>
+                </div>
+
+                <div id="sec03_D_system" class="sec03_box">
+                    <div class="sec03_img"><img src="img/섹션03_System_bg2.png" alt="이미지"></div>
+                    <div class="sec03_text" data-aos="fade-down" data-aos-duration="2000">
+                        <span class="sec03_maintext">SYSTEM</span>
+                        <div class="underline"></div>
+                        <span class="sec03_subtext">세계 각지의 Proving Ground와<br><b>글로벌 평가 시스템 구축</b></span>
+                    </div>
+                </div>
+
+                <div id="sec03_E_product" class="sec03_box">
+                    <div class="sec03_img"><img src="img/섹션03_Product_bg2.png" alt="이미지"></div>
+                    <div class="sec03_text" data-aos="fade-down" data-aos-duration="2000">
+                        <span class="sec03_maintext">PRODUCT</span>
+                        <div class="underline"></div>
+                        <span class="sec03_subtext">독자적인 최적화 IT 시스템 MES와 SCM 가동<br><b>체계적인 생산관리와 효율적인 공급</b></span>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- 섹션3 오른쪽 고정-->
+            <div id="sec03_tire">
+
+                <!-- 타이어 마우스오버 회전 -->
+
+                <img src="img/tire.png" alt="이미지" id="sec03_Rtire">
+
+                <!-- 이름짓기 -->
+                <ul id="tire_text_wrap">
+                    <li class="tire_text" id="history">
+                        <!-- a태그 새로고침기능 -->
+                        <span>HISTORY</span>
+                        <!-- after값 수정? -->
+                        <!-- <div class="text_circle"></div> -->
+                    </li>
+
+                    <li class="tire_text on" id="design">
+                        <span>DESIGN</span>
+                        <!-- <div class="text_circle"></div> -->
+                    </li>
+
+                    <li class="tire_text" id="technology">
+                        <span>TECHNOLOGY</span>
+                        <!-- <div class="text_circle"></div> -->
+                    </li>
+
+                    <li class="tire_text" id="system">
+                        <span>SYSTEM</span>
+                        <!-- <div class="text_circle"></div> -->
+                    </li>
+
+                    <li class="tire_text" id="product">
+                        <span>PRODUCT</span>
+                        <!-- <div class="text_circle"></div> -->
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <!--/////////////////////// 섹션4 - 광고 ///////////////////////-->
+
+        <div class="section" id="sec04">
+
+            <!-- 섹션4 배경 -->
+            <!-- css bg -->
+            <!-- <div id="sec04_bg"><img src="img/sec04_bg.png" alt="이미지"></div> -->
+
+            <div id="sec04_wrap" data-aos="fade-down" data-aos-duration="800">
+
+                <div id="sec04_left">
+                    <span class="sec04_title">MARKETING</span>
+                    <div class="more_btn"><a href="#">MORE +</a></div>
+
+                    <div id="sec04_left_imgwrap">
+                        <a href="#">
+                            <div class="sec04_left_img">
+                                <div class="sec04_left_imgtext">&nbsp;&nbsp;&nbsp;&nbsp;맨체스터시티 FC와 공식 파트너십 체결</div>
+                                <div class="sec04_img_box" id="sec04_A">
+                                    <img src="img/mancity_keyimg.png" alt="이미지" class="sec4_img_body">
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="sec04_left_img">
+                                <div class="sec04_left_imgtext">&nbsp;&nbsp;&nbsp;&nbsp;미국 드리프트 대회 시리즈 포뮬러 드리프트의 타이어 후원사
+                                </div>
+                                <div class="sec04_img_box" id="sec04_B">
+                                    <img src="img/img_sports_formula1.jpeg" alt="이미지" class="sec4_img_body">
+                                </div>
+                            </div>
+
+                        </a>
+
+                        <a href="#">
+                            <div class="sec04_left_img" id="sec04_C">
+                                <div class="sec04_left_imgtext">&nbsp;&nbsp;&nbsp;&nbsp;넥센타이어 스피드 레이싱 대회</div>
+                                <div class="sec04_img_box">
+                                    <img src="img/img_sports_racing1.jpeg" alt="이미지" class="sec4_img_body">
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+
+                <div id="sec04_right">
+                    <span class="sec04_title">NEWS & EVENT</span>
+                    <div class="more_btn more_btn_right"><a href="#">MORE +</a></div>
+
+                    <div id="sec04_right_imgwrap">
+                        <a href="#">
+                            <div class="sec04_right_imgA"><img src="img/sec04_R01.png" alt="이미지"></div>
+                        </a>
+
+                        <a href="#">
+                            <div class="sec04_right_imgB"><img src="img/sec04_R02.jpeg" alt="이미지"></div>
+                        </a>
+
+                        <a href="#">
+                            <div class="sec04_right_imgB"><img src="img/sec04_R03.jpeg" alt="이미지"></div>
+                        </a>
+
+                        <a href="#">
+                            <div class="sec04_right_imgB marginRight"><img src="img/sec04_R04.jpeg" alt="이미지"></div>
+                        </a>
+
+                        <a href="#">
+                            <div class="sec04_right_imgA"><img src="img/sec04_R05.jpeg" alt="이미지"></div>
+                        </a>
+
+                        <a href="#">
+                            <div class="sec04_right_imgB"><img src="img/sec04_R06.jpeg" alt="이미지"></div>
+                        </a>
+
+                        <a href="#">
+                            <div class="sec04_right_imgA"><img src="img/sec04_R07.jpeg" alt="이미지"></div>
+                        </a>
+
+                        <a href="#">
+                            <div class="sec04_right_imgB marginRight"><img src="img/sec04_R08.jpeg" alt="이미지"></div>
+                        </a>
+
+                        <a href="#">
+                            <div class="sec04_right_imgB"><img src="img/sec04_R09.jpeg" alt="이미지"></div>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <script>
+                AOS.init();
+            </script>
+
+            <div id="footer">
+
+                <div id="footer_logo"><img src="img/footer_logo.png" alt="이미지"></div>
+
+                <div id="footer_left">
+                    <ul>
+                        <li><b>개인정보처리방침</b>&nbsp; |</li>
+                        <li>&nbsp;&nbsp;이용약관&nbsp;&nbsp;|</li>
+                        <li>&nbsp;&nbsp;고객상담&nbsp;&nbsp;|</li>
+                        <li>&nbsp;&nbsp;이메일 문의하기&nbsp;&nbsp;|</li>
+                        <li>&nbsp;&nbsp;찾아오시는 길</li>
+                    </ul>
+
+                    <br>
+                    <br>
+
+                    <span>
+                        경상남도 양산시 충렬로 355 넥센타이어 주식회사<br>
+                        사업자등록번호 621-81-10769 | 대표번호 055 370 5114
+                    </span>
+
+                    <br>
+                    <br>
+
+                    <span>
+                        렌탈 서비스 1855 0100 | 고객만족센터 1577 2781 | 서비스센터 02 6671 7003
+                    </span>
+
+                    <br>
+                    <br>
+
+                    <span>Copyright ⓒ 2017 Nexen tire. all rights reserved.</span>
+                </div>
+
+                <div id="footer_right">
+                    <ul id="familysite">
+                        <li><a href="#">Family Site ▲</a></li>
+                        <li><a href="#">Global Site ▲</a></li>
+                    </ul>
+
+                    <ul id="SNS">
+                        <li><a href="#"><img src="img/페북아이콘.png" alt="이미지"></a></li>
+                        <li><a href="#"><img src="img/유튜브아이콘.png" alt="이미지"></a></li>
+                        <li><a href="#"><img src="img/인스타아이콘.png" alt="이미지"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
